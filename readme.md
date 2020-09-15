@@ -40,4 +40,4 @@ npm: 6.9.0
 
 ## Start
 
-- `yarn start` - this will start ui (port 3000) and api (port 3001)
+- `yarn start` - this will start ui (port 3000) and api  (port 3001)
