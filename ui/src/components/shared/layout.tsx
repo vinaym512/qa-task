@@ -17,13 +17,13 @@ export const Layout: React.FC<LayoutProps> = props => {
     const [content, setContent] = useState<ContentResponse | undefined>();
 
     useEffect(() => {
-        loadContent(pageId);
-    }, []);
+        async function loadContent(pageId: string) {
+            const content: ContentResponse = await get(`content/${pageId}`);
+            setContent(content)
+        }
 
-    async function loadContent(pageId: string) {
-        const content: ContentResponse = await get(`content/${pageId}`);
-        setContent(content)
-    }
+        loadContent(pageId);
+    }, [pageId, get]);
 
     return (
         <div className="main">
