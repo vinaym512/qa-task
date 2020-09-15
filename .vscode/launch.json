@@ -19,7 +19,12 @@
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
             },
-            "preLaunchTask": "buildApi",
+            "preLaunchTask": "buildApi"
+        },
+        {
+            "name": "Local Process with Kubernetes",
+            "type": "local-process-with-kubernetes.configuration",
+            "request": "launch"
         }
     ]
 }

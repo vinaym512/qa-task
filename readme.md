@@ -46,10 +46,10 @@ REST endpoints that are used in the UI have been implemented.
 - Install Yarn package manager: https://classic.yarnpkg.com/en/docs/install
 
 - NB: Current app has been tested with:
-node: v10.16.0
-yarn: 1.22.4
-dotnet: 3.1.202
-npm: 6.9.0
+    - node: v10.16.0
+    - yarn: 1.22.4
+    - dotnet: 3.1.202
+    - npm: 6.9.0
 
 ## Start
 
