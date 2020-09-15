@@ -12,7 +12,7 @@ The application has 4 pages:
 You will need to:
 - Implement missing features in the UI
     > Please start the application (see instructions below) and explore it to understand what needs to be implemented.
-- Make sure the application logic is working correctly
+- Make sure the application logic is working correctly (feel free to refactor or change code)
 - Cover the application logic with tests
 
 ## This code task is to test a candidate's ability to (non exhaustive list):
