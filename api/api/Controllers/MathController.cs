@@ -22,12 +22,19 @@ namespace api
         }
 
         [HttpGet("factorial/{n}")]
-        public IActionResult GetFactorial(int n) => Ok(_factorialCalculator.Calculate(n));
+        public IActionResult GetFactorial(int n) => Ok(new CalculationResponse(_factorialCalculator.Calculate(n)));
 
         [HttpGet("fibonacci/{n}")]
-        public IActionResult GetFibonacci(int n) => Ok(_fibonacciCalculator.Calculate(n));
+        public IActionResult GetFibonacci(int n) => Ok(new CalculationResponse(_fibonacciCalculator.Calculate(n)));
 
         [HttpGet("random-square/{n}")]
-        public IActionResult GetRandomSquare(int n) => Ok(_randomSquareCalculator.Calculate(n));
+        public IActionResult GetRandomSquare(int n) => Ok(new CalculationResponse(_randomSquareCalculator.Calculate(n)));
+
+        private class CalculationResponse
+        {
+            public CalculationResponse(double result) => Result = result;
+
+            public double Result { get; set; }
+        }
     }
 }
