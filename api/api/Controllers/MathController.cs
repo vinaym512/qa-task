@@ -12,7 +12,8 @@ namespace api
         private readonly RandomSquareCalculator _randomSquareCalculator;
 
         public MathController(
-            FactorialCalculator factorialCalculator,
+            FactorialCalculator 
+            factorialCalculator,
             FibonacciCalculator fibonacciCalculator,
             RandomSquareCalculator randomSquareCalculator)
         {

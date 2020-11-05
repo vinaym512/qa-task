@@ -3,7 +3,7 @@ import { Layout } from '../shared/layout';
 
 export const Home = () => {
     return (
-        <Layout pageId="home">
+        <Layout pageId="home" >
             <h2>
                 Welcome to the automated QA specialist code task!
             </h2>

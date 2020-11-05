@@ -13,5 +13,6 @@ namespace api.Services
         private static int Fib(int n) => n == 0 || n == 1
             ? n
             : Fib(n - 1) + Fib(n - 2);
+            
     }
 }
